@@ -8,11 +8,12 @@
     <style>
         body {
             height: 97vh;
-            background-color: #000000;
-            background-image: url('imagens/universe.jpg');
-            background-repeat: repeat-y;
+
+             /* shorthand BACKGROUND:
+            color > image > position > repeat > size (quando o navegador permitir) > attachment */
+            background: #000000 url('imagens/universe.jpg') center center no-repeat fixed;
+
             background-size: cover;
-            background-position: center center;
         }
 
         main {
