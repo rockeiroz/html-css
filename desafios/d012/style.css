@@ -15,21 +15,44 @@ a:hover {
     text-decoration: underline;
 }
 
+body {
+    background-color: #9bcdec;
+    min-height: 100vh;
+}
+
 header {
-    background-color: #000000;
+    background-color: #06324e;
     color: #ffffff;
     text-align: center;
-    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-
-.d1 {
-    background-image: url(imagens/background001.jpg);
+header > h1 {
+    font-variant: small-caps;
 }
 
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2.5em;
+    padding-left: 30px;
+
+}
+
+.destaque {
+    background-color: #556f7f;
+    color: #ffffff;
+}
+
+.destaque > p {
+    background-color: #00000066;
+    width: 300px;
+}
 footer {
-    background-color: #000000;
+    background-color: #06324e;
     color: #ffffff;
     text-align: center;
+    padding: 5px;
 }
 
