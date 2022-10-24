@@ -11,6 +11,7 @@
         }
 
        table {
+        height: 300px;
         width: 500px;
         border-collapse: collapse;
        } 
@@ -18,6 +19,8 @@
        td {
         border: 1px solid #000000;
         padding: 5px;
+        text-align: center; /* alinhamento horizontal (right, center, left) */
+        vertical-align: top; /* alinhamento vertical (top, middle, bottom) */
        }
 
        td.dado {
@@ -36,7 +39,7 @@
 <!-- HIERARQUIA DE TABELAS SIMPLES:
     TABLE = tabela
         TABLE ROW <tr> = linha de tabela
-            TABLE HEADER = cabeçalho de tabela
+            TABLE HEADER <th> = cabeçalho de tabela
                 TABLE DATA <td> = dados de tabela -->
 
     <table>
