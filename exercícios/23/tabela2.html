@@ -7,6 +7,7 @@
     <title>Tabelas Grandes</title>
     <style>
         body {
+            background-color: #1d1d1d;
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -23,9 +24,17 @@
 
         td, th {
             border: 1px solid #1c1c96;
-            padding: 2px;
+            padding: 5px;
             color: #1c1c96;
             text-indent: 5px;
+        }
+
+        tbody > tr:nth-child(2n) /*even*/ {
+            background-color: #ffffff;
+        }
+
+        tbody > tr:nth-child(2n-1) /*odd*/ {
+            background-color: #dee6ff;
         }
 
         caption {
@@ -38,7 +47,7 @@
         th.sub-titulo {
             border: 1px solid #1c1c96;
             padding: 2px;
-            background-color: #d0dafc;
+            background-color: #b2c2f8;
             color: #000000;
         }
 
@@ -48,17 +57,17 @@
 
         a {
             text-decoration: none;
-            color: #000000;
+            color: #1c1c96;
         }
 
         a:hover {
             text-decoration: underline;
         }
 
-        p {
+        tfoot {
+            background-color: #ffffff;
+            font-weight: bold;
             font-size: 0.8em;
-            text-align: left;
-            text-indent: 5px;
         }
 
     </style>
@@ -79,7 +88,7 @@
                 <tr>
                 <td>
                 <th> -->
-    <h1>&#x1F4BF August - Eric Clapton</h1>
+    <h1>&#x1F4BF August - Eric Clapton (1986)</h1>
 
     <table>
         <caption>Gráficos Semanais</caption>
@@ -139,29 +148,21 @@
                 <td>Billboard 200 dos EUA</td>
                 <td class="num">37</td>
             </tr>
-        </tbody>
-    </table>
-
-    <table>
-        <caption class="titulo" scope="col" >Gráficos de Fim de Ano</caption>
-
-        <tbody>
             <tr>
-                <td>Billboard 200 dos EUA</td>
-                <td class="num" style="width: 90px;">70</td>
+                <td>Billboard 200 dos EUA (Gráfico de Fim de Ano)</td>
+                <td class="num">70</td>
             </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th scope="row" style="text-align: left;">Data de Lançamento (UK)</th>
-                <td>24/11/1986</td>
+                <th colspan="2">via <a href="https://en.wikipedia.org/wiki/August_(album)" target="_blank">Wikipedia</th>
             </tr>
         </tfoot>
     </table>
 
-    <footer>
-        <p>via <a href="https://en.wikipedia.org/wiki/August_(album)" target="_blank">Wikipedia</a></p>
-    </footer>
+    <!-- colspan (para expandir uma célula para além de uma coluna)
+    rowspan (para expandir uma célula para além de uma linha) -->
+    
 </body>
 </html>
